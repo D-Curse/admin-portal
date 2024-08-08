@@ -1,0 +1,151 @@
+.home_content{
+    padding: 2% 5%;
+}
+
+.sql-query-input{
+    width: 90%;
+    margin: 0 3%;
+    background-color: #151515;
+    color: #9CD9F0;
+    font-size: 1rem;
+    font-family: monospace;
+    white-space: normal;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.query-btn{
+    margin: 1% 3% 0 0;
+    float: right;
+    padding: 15px;
+    width: 10%;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #151515;
+    color: #d3d3d3;
+}
+
+.query-btn:hover{
+    background-color: #2e2e2e;
+    color: #d3d3d3;
+
+}
+
+.logout:hover{
+    padding: 4px 16px;
+    border-radius: 10px;
+}
+
+.role{
+    margin: 0 0 2% 0;
+}
+
+.alert-main{
+    left: 35%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 25%;
+    text-align: center;
+    position: absolute;
+    padding: 10px 10px 30px 10px;
+    border: 3px solid rgb(220, 53, 69);
+}
+
+.alert-button{
+    padding: 10px;
+    color: #000;
+    background-color: rgb(220, 53, 69);
+    border-radius: 15px;
+}
+
+.alert-button:hover{
+    color: #fff;
+}
+
+.alert-body {
+    padding: 0 0 18px 0;
+}
+
+td ul{
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+}
+
+td ul li{
+    font-size: 1rem;
+}
+
+.first-render-text{
+    font-size: 2rem;
+    font-weight: bold   ;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10rem 0 0 0;
+}
+
+.error-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: gray;
+    margin: 5% 30%;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.error-message {
+    margin: 0;
+    padding: 5% 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.error-details {
+    margin: 0;
+    padding: 0 0 5% 0;
+    font-size: 1rem;
+}
+
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    background: #fff;
+    filter: blur(5px) contrast(10);
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+.loader:before,
+.loader:after{
+    content: "";
+    grid-area: 1/1;
+    background:
+      linear-gradient(#000 0 0) left,
+      linear-gradient(#000 0 0) right;
+    background-size: 20px 40px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+.loader:after {
+    height: 20px;
+    width:  20px;
+    margin: auto 0;
+    border-radius: 50%;
+    background: #000;
+    animation: l10 1s infinite;
+}
+@keyframes l10{
+    90%,100% {transform: translate(300%)}
+}

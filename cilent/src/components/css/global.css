@@ -1,0 +1,88 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  font-family: Consolas;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 1%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+li {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 1rem; 
+}
+
+button:hover {
+  color: #fff;
+}
+
+.Home, .Form, .auth_form {
+  padding-top: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+th {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
